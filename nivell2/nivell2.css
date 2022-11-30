@@ -38,7 +38,6 @@ body{
             height: 50px;
         }
         .nav{
-            flex: 10 1 auto;
             justify-content: center;
         }
             .nav a{
@@ -172,13 +171,18 @@ footer{
     .pie{
         background: #B2B2B2;
         text-align: center; 
-        width: 100%;    
+        width: 100%;   
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
-    .pie a{
+    .pie2{
         background: #ececec;
         color:#444;
         font-size: 13px;
-        letter-spacing: 1px;   
+        letter-spacing: 1px;  
+        width: 98%; 
+        
     }  
 @media all and (max-width: 1024px){
     .section{
