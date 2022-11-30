@@ -1,0 +1,85 @@
+*{
+    margin: 10px;
+    padding:10px;
+    box-sizing: border-box;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: #FD841F;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+        .logo{
+            background: #3E6D9C;
+            flex: 1 1 auto;
+        }
+        .nav{
+            background: #3E6D9C;
+            flex: 5 1 auto;
+        }
+        .social{
+            background: #3E6D9C;
+            flex: 1 1 auto;
+        }
+    .texto-principal{
+        background: #624F82;
+    }
+        h1{
+            background: #A3C7D6;
+        }
+.section{
+    background: #000;
+    display: flex;
+}
+    .articulos{
+        background: #749F82;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .article{
+            background: #CFFF8D;
+            flex: 1 1 40%;
+        }
+        .navegacion{
+            background: #FD841F;
+            flex: 1 1 100%;
+
+        }
+    .aside{
+        background: #FFA1CF;
+        flex: 1 1 auto;
+    }
+        .publicidad{
+            background: #CFFF8D;
+        }
+footer{
+    background: #000;
+}
+    .pie{
+        background: #A7FFE4;
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        .section{
+            flex-direction: column;
+        }
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+        .section{
+            flex-direction: column;
+        }
+        .menu{
+            flex-direction: column; 
+        }
+        .articulos{
+            flex-direction: column; 
+        } 
+    }
