@@ -35,7 +35,7 @@ body{
         }
         .logo a img{
             width: auto;
-            height: 50px;
+            height: 70px;
         }
         .nav{
             justify-content: center;
@@ -65,13 +65,13 @@ body{
                 color:#343434;
             }
     .texto-principal{
-        height: 120px;
-        margin: 35px;
+        height: 160px;
+        margin: 20px;   
     }
         h1{
             background: rgba(0,0,0,.1);
-            height: 80px;
-            margin-top: 60px;
+            height: 98px;
+            margin-top: 56px;
             font-family: 'lora', serif;
             font-size: 25px;
             color:#FF884B;
@@ -167,6 +167,7 @@ footer{
     display: flex;
     justify-content: center;
     padding: 5px;
+    
 }
     .pie{
         background: #B2B2B2;
@@ -177,14 +178,14 @@ footer{
         padding: 0;
     }
     .pie2{
-        background: #ececec;
-        color:#444;
+        color:#000;
         font-size: 13px;
-        letter-spacing: 1px;  
+        letter-spacing: 1px; 
+        background: #ececec;
         width: 98%; 
         
     }  
-@media all and (max-width: 1024px){
+@media all and ( max-width: 1024px ){
     .section{
         flex-direction: column;
     }
@@ -192,7 +193,11 @@ footer{
         flex-direction: column;
     }
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media all and ( max-width: 856px ){
+    .off { display: none; }
+    .nav a { font-size: 20px;}
+}
+@media all and ( max-width: 762px ) {
     .section{
         flex-direction: column;
     }
@@ -201,5 +206,20 @@ footer{
     }
     .articulos{
         flex-direction: column; 
-    } 
+    }  
 }
+@media all and ( max-width: 587px ){
+    .nav a{
+        padding: 20px;
+    }    
+}
+@media all and ( max-width: 431px ){
+    .nav a{
+        padding: 5px;
+    }    
+}
+
+@media all and ( max-width: 399px){
+    .letters { display: none; }
+}
+
