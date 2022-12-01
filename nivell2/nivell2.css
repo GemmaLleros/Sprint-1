@@ -192,6 +192,14 @@ footer{
     .menu{
         flex-direction: column;
     }
+    .aside h3{
+        text-align: center;
+        margin:0 15px;
+    }
+    .publicidad{
+       padding: 10px; 
+    }
+    
 }
 @media all and ( max-width: 856px ){
     .off { display: none; }
@@ -206,7 +214,10 @@ footer{
     }
     .articulos{
         flex-direction: column; 
-    }  
+    } 
+    .article p{
+        column-count: 1;
+    } 
 }
 @media all and ( max-width: 587px ){
     .nav a{
@@ -220,6 +231,8 @@ footer{
 }
 
 @media all and ( max-width: 399px){
-    .letters { display: none; }
+    .letters {
+        display: none; 
+    }
 }
 
